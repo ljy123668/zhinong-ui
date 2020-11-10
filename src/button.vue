@@ -1,13 +1,13 @@
 <template>
-  <div>
-    <button class="z-button">按钮</button>
-  </div>
+
+  <button class="z-button">按钮</button>
+
 </template>
 <script>
 export default {};
 </script>
 <style lang="scss">
-z.button {
+.z-button {
   font-size: var(--font-size);
   height: var(--button-height);
   padding: 0 1em;

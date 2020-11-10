@@ -1,10 +1,9 @@
 import Vue from 'vue';
 import Button from './button.vue'
 
-Vue.comonent('z-button', Button)
+Vue.component('z-button', Button)
 
 
 new Vue({
-
   el: '#app',
 })
