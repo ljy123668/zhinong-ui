@@ -4,13 +4,18 @@
     class="z-button"
     :class="{[`icon-${iconPosition}`] : true}"
   >
-    <svg
+    <!-- <svg
       v-if="icon"
       class="icon"
       aria-hidden="true"
     >
       <use :xlink:href="`#i-${icon}`"></use>
-    </svg>
+    </svg> -->
+    <z-icon
+      v-if="icon"
+      class="icon"
+      :name="icon"
+    ></z-icon>
     <div class="content">
       <slot></slot>
     </div>
