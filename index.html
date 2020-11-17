@@ -23,6 +23,7 @@
       --border-color: #999;
       --border-color-hover: #666;
 
+
     }
 
     #app {
@@ -49,6 +50,23 @@
       按钮
     </z-button>
     <z-icon name="loading"></z-icon>
+
+
+    <z-button-group>
+      <z-button :loading="loading1" icon="left">
+        上一页
+      </z-button>
+      <div>
+        <z-button>
+          确定
+        </z-button>
+      </div>
+
+      <z-button :loading="loading1" icon="right" icon-position="right">
+        下一页
+      </z-button>
+
+    </z-button-group>
   </div>
 
 
