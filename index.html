@@ -39,21 +39,21 @@
 <body>
 
   <div id="app">
-    <z-button>
+    <z-button :loading="loading1" @click="loading1 = !loading1">
       按钮
     </z-button>
-    <z-button icon="setting" icon-position="left">
+    <z-button icon="setting" icon-position="left" :loading="loading2" @click="loading2 = !loading2">
       按钮
     </z-button>
-    <z-button icon="setting" icon-position="right">
+    <z-button icon="setting" icon-position="right" :loading="loading3" @click="loading3 = !loading3">
       按钮
     </z-button>
-    <z-icon name="setting"></z-icon>
+    <z-icon name="loading"></z-icon>
   </div>
 
 
   <script src="./src/app.js"></script>
-  <script src="//at.alicdn.com/t/font_2194035_kisj5ycioz.js"></script>
+  <script src="//at.alicdn.com/t/font_2194035_pmgxiohjxg.js"></script>
 </body>
 
 </html>
