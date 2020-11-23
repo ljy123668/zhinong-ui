@@ -3,14 +3,17 @@
 [![Build Status](https://www.travis-ci.org/ljy123668/zhinong-ui.svg?branch=master)](https://www.travis-ci.org/ljy123668/zhinong-ui)
 
 ## 介绍
-vue-ui组件库
+这是我在学习 Vue 的过程中做的一个 UI 框架，希望能对你有用。
 作者：纸农丶
 
 ## 开始使用
 
 1.安装
-
   使用本框架前，请在 CSS 中开启border-box
+
+  ```
+*,*::before,#::after{box-sizing : border-box;}
+  ```
 2.  xxxx
 3.  xxxx
 
