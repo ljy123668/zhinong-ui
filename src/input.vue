@@ -8,13 +8,17 @@
       :value=value
       :disabled="disabled"
       :readonly="readonly"
+      @change="$emit('change',$event)"
+      @input="$emit('input',$event)"
+      @foucs="$emit('foucs',$event)"
+      @blur="$emit('blur',$event)"
     >
     <template v-if="error">
       <icon
         name="error"
         class="error-icon"
       ></icon>
-      <span class="error-msg">{{error}}</span>
+      <span class="errorMessage">{{error}}</span>
     </template>
 
   </div>
@@ -89,7 +93,7 @@ $red: #f1453d;
   .error-icon {
     fill: $red;
   }
-  .error-msg {
+  .errorMessage {
     color: $red;
   }
 }
