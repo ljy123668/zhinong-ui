@@ -48,7 +48,8 @@
       <z-input value="张三" disabled></z-input>
       <z-input value="里斯" readonly></z-input>
       <z-input value="里斯"></z-input>
-      <z-input value="里斯" @change="inputChange"></z-input>
+      <z-input @change="inputChange" v-model="message"></z-input>
+      <p>{{message}}</p>
 
       <div class="box">
         <z-input value="里斯" error="字数不能少于3个字"></z-input>
