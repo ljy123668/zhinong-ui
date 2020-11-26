@@ -10,7 +10,7 @@
       :readonly="readonly"
       @change="$emit('change',$event)"
       @input="$emit('input',$event)"
-      @foucs="$emit('foucs',$event)"
+      @focus="$emit('focus',$event)"
       @blur="$emit('blur',$event)"
     >
     <template v-if="error">
