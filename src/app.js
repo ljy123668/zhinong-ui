@@ -36,11 +36,14 @@ new Vue({
     message: 'hi'
   },
   created() {
+    this.$toast('我是 message', {
+      enableHtml: true
 
+    })
   },
   methods: {
     showToast() {
-      this.$toast('我是 message')
+
     },
     inputChange(e) {
       console.log('hi', e.target.value);
