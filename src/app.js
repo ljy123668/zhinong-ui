@@ -49,8 +49,8 @@ new Vue({
             console.log('需要充值');
           }
         },
-        autoClose: false,
-        autoCloseDelay: 3
+        autoClose: 3,
+
 
       })
     },

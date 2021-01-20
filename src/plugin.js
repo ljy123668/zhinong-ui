@@ -31,7 +31,6 @@ function createToast({
     let Constructor = Vue.extend(Toast)
     let toast = new Constructor({
         propsData
-
     })
     toast.$slots.default = [message]
     toast.$mount()
