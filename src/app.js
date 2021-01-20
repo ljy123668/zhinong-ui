@@ -36,14 +36,23 @@ new Vue({
     message: 'hi'
   },
   created() {
-    this.$toast('我是 message', {
-      enableHtml: true
 
-    })
   },
   methods: {
     showToast() {
+      this.$toast('你的智商需要充值', {
+        enableHtml: false,
+        position: 'top',
+        closeButton: {
+          text: '已充值',
+          callback() {
+            console.log('需要充值');
+          }
+        },
+        autoClose: false,
+        autoCloseDelay: 3
 
+      })
     },
     inputChange(e) {
       console.log('hi', e.target.value);
