@@ -42,9 +42,50 @@
 </head>
 
 <body>
+  <style>
+    .demo {
+      border: 1px solid #666;
+      min-height: 100px;
+    }
 
+    .sider {
+      background: #333;
+      width: 150px;
+    }
+
+    .sider.slide-enter,
+    .sider.slide-leave-to {
+      margin-left: -150px;
+    }
+
+    .header {
+      background: #999;
+      height: 100px;
+    }
+
+    .footer {
+      background: #ccc;
+      height: 50px;
+    }
+  </style>
   <div id="app">
-    <div style="border:1px solid grey;">
+    <z-layout style="height: 100vh;">
+      <z-sider class="demo">sider</z-sider>
+
+      <z-layout>
+        <z-header class="demo">header</z-header>
+        <z-content class="demo">content</z-content>
+        <z-footer class="demo">3</z-footer>
+      </z-layout>
+
+
+    </z-layout>
+
+
+
+
+
+    <!-- <div style="border:1px solid grey;">
       <z-row gutter="20">
         <z-col span="2" :ipad="{span:8}" :narrpw-pc="{span:4}" :pc="{span:2}" :wide-pc="{span:1}">11
         </z-col>
@@ -76,13 +117,13 @@
         <z-col span="4">1</z-col>
         <z-col span="18" offset="2">2</z-col>
       </z-row>
-    </div>
+    </div> -->
 
 
 
 
 
-    <div style="margin: 20px;">
+    <!-- <div style="margin: 20px;">
       <z-input value="张三" disabled></z-input>
       <z-input value="里斯" readonly></z-input>
       <z-input value="里斯"></z-input>
@@ -92,11 +133,11 @@
       <div class="box">
         <z-input value="里斯" error="字数不能少于3个字"></z-input>
       </div>
-    </div>
+    </div> -->
 
 
 
-    <z-button :loading="loading1" @click="loading1 = !loading1">
+    <!-- <z-button :loading="loading1" @click="loading1 = !loading1">
       按钮
     </z-button>
     <z-button icon="setting" icon-position="left" :loading="loading2" @click="loading2 = !loading2">
@@ -104,10 +145,10 @@
     </z-button>
     <z-button icon="setting" icon-position="right" :loading="loading3" @click="loading3 = !loading3">
       按钮
-    </z-button>
+    </z-button> -->
 
 
-    <z-button-group>
+    <!-- <z-button-group>
       <z-button :loading="loading1" icon="left">
         上一页
       </z-button>
@@ -121,7 +162,7 @@
         下一页
       </z-button>
 
-    </z-button-group>
+    </z-button-group> -->
 
   </div>
 
