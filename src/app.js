@@ -10,6 +10,9 @@ import Footer from './Layout/footer.vue'
 import Header from './Layout/header.vue'
 import Layout from './Layout/layout.vue'
 import Sider from './Layout/sider.vue'
+import Toast from './toast.vue'
+import plugin from './plugin'
+
 Vue.component('z-button', Button)
 Vue.component('z-icon', Icon)
 Vue.component('z-button-group', ButtonGroup)
@@ -21,6 +24,8 @@ Vue.component('z-layout', Layout)
 Vue.component('z-header', Header)
 Vue.component('z-footer', Footer)
 Vue.component('z-content', Content)
+Vue.component('z-toast', Toast)
+Vue.use(plugin)
 
 new Vue({
   el: '#app',
@@ -30,7 +35,13 @@ new Vue({
     loading3: false,
     message: 'hi'
   },
+  created() {
+
+  },
   methods: {
+    showToast() {
+      this.$toast('我是 message')
+    },
     inputChange(e) {
       console.log('hi', e.target.value);
     }
