@@ -33,7 +33,6 @@ export default {
 <style lang="scss">
 .tabs-pane {
   &.active {
-    background-color: red;
   }
 }
 </style>
