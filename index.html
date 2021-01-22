@@ -36,19 +36,35 @@
 </style>
 
 <body>
-  <div id="app" style="padding-top: 100px ;padding-left: 100px; border: 1px solid red;">
-    <z-popover>
-      <template slot="content">
-        <div>popover 内容</div>
-      </template>
-      <button>点我</button>
-    </z-popover>
-    <z-popover>
-      <template slot="content">
-        <div>popover 内容</div>
-      </template>
-      <button>点我</button>
-    </z-popover>
+  <div id="app" style="padding-top: 100px ;padding-left: 100px;">
+
+    <div @click="yyy">
+      <z-popover position="bottom">
+        <template slot="content">
+          <div>popover 3411111111111111111111111111111内容</div>
+        </template>
+        <z-button>点我下</z-button>
+      </z-popover>
+      <z-popover position="left">
+        <template slot="content">
+          <div>popover 3411111111111111111111111111111内容</div>
+        </template>
+        <z-button>点我左</z-button>
+      </z-popover>
+      <z-popover position="right">
+        <template slot="content">
+          <div>popover 3411111111111111111111111111111内容</div>
+        </template>
+        <z-button>点我右</z-button>
+      </z-popover>
+      <z-popover>
+        <template slot="content">
+          <div>popover 内容</div>
+        </template>
+        <z-button>点我</z-button>
+      </z-popover>
+    </div>
+
 
 
     <!-- <z-tabs :selected.sync="selectedTab">

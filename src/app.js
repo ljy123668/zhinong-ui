@@ -52,6 +52,9 @@ new Vue({
 
   },
   methods: {
+    yyy() {
+      console.log('yyy')
+    },
     showToast() {
       this.$toast('你的智商需要充值', {
         enableHtml: false,
