@@ -36,8 +36,22 @@
 </style>
 
 <body>
-  <div id="app">
-    <z-tabs :selected.sync="selectedTab">
+  <div id="app" style="padding-top: 100px ;padding-left: 100px; border: 1px solid red;">
+    <z-popover>
+      <template slot="content">
+        <div>popover 内容</div>
+      </template>
+      <button>点我</button>
+    </z-popover>
+    <z-popover>
+      <template slot="content">
+        <div>popover 内容</div>
+      </template>
+      <button>点我</button>
+    </z-popover>
+
+
+    <!-- <z-tabs :selected.sync="selectedTab">
       <z-tabs-head>
         <template slot="actions">
           <button>设置</button>
@@ -64,7 +78,7 @@
           体育相关资讯
         </z-tabs-pane>
       </z-tabs-body>
-    </z-tabs>
+    </z-tabs> -->
 
 
 
