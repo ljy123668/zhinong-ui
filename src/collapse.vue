@@ -5,9 +5,31 @@
 </template>
 
 <script>
+import Vue from "vue";
 export default {
+  props: {
+    single: {
+      type: Boolean,
+      default: false,
+    },
+    selected: {
+      type: String,
+    },
+  },
   data() {
-    return {};
+    return {
+      eventBus: new Vue(),
+    };
+  },
+  provide() {
+    // if (this.single) {
+    return {
+      eventBus: this.eventBus,
+    };
+    // }
+  },
+  mounted() {
+    this.eventBus.$emit("update:selected", this.selected);
   },
 };
 </script>
