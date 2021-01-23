@@ -1,14 +1,10 @@
 <template>
-  <svg
-    class="z-icon"
-    aria-hidden="true"
-  >
-
+  <svg class="z-icon" aria-hidden="true">
     <use :xlink:href="`#i-${name}`"></use>
-
   </svg>
 </template>
 <script>
+import "./svg";
 export default {
   props: ["name"],
 };

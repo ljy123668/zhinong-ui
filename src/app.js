@@ -51,6 +51,7 @@ new Vue({
     loading3: false,
     message: 'hi',
     selectedTab: 'woman',
+    selectedTab1: ['1'],
   },
   created() {
 
