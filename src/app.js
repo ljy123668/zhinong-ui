@@ -45,36 +45,9 @@ Vue.use(plugin)
 
 new Vue({
   el: '#app',
-  data: {
-    loading1: false,
-    loading2: true,
-    loading3: false,
-    message: 'hi',
-    selectedTab: 'woman',
-    selectedTab1: ['1'],
-  },
-  created() {
-
-  },
   methods: {
     yyy() {
       console.log('yyy')
     },
-    showToast() {
-      this.$toast('你的智商需要充值', {
-        enableHtml: false,
-        position: 'middle',
-        closeButton: {
-          text: '已充值',
-          callback() {
-            console.log('需要充值');
-          }
-        },
-        autoClose: 3,
-
-
-      })
-    },
-
   }
 })
