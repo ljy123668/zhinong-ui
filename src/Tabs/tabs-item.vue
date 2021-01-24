@@ -54,11 +54,14 @@ $disabled-text-color: grey;
 .tabs-item {
   flex-shrink: 0;
   padding: 0 2em;
+  cursor: pointer;
+  height: 100%;
   display: flex;
   align-items: center;
 
   &.active {
     color: $blue;
+    font-weight: bold;
   }
   &.disabled {
     color: $disabled-text-color;
