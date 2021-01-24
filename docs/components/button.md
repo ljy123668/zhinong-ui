@@ -44,6 +44,6 @@ title:Button
 
 |     参数     |      说明       |  类型   |                            可选值                             | 默认值 |
 | :----------: | :-------------: | :-----: | :-----------------------------------------------------------: | :----: |
-|     icon     | 设置内置的 icon | String  | info,error,loading,setting,left,thumbs-up,down,download,right |  类型  |
+|     icon     | 设置内置的 icon | String  | info,error,loading,setting,left,thumbs-up,down,download,right |   --   |
 | iconPosition |    图标位置     | String  |                          left、right                          |  left  |
 |   loading    |    加载状态     | Boolean |                          true、false                          | false  |
