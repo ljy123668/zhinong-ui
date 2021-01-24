@@ -1,15 +1,12 @@
 <template>
-  <div>
+  <div class="wrapper">
     <z-button>默认按钮</z-button>
-    <z-button :loading="true"> 按钮 </z-button>
-    <z-button icon="setting" icon-position="left" :loading="true">
-      按钮
+    <z-button :loading="loading" @click="loading = !loading">
+      加载按钮
     </z-button>
-    <z-button icon="setting" icon-position="right" :loading="true">
-      按钮
-    </z-button>
-    <z-button icon="setting" icon-position="right" disabled> 按钮 </z-button>
-    <pre><code>{{content}}</code></pre>
+    <z-button icon="setting"> 图标按钮 </z-button>
+    <z-button icon="setting" icon-position="right"> 图标按钮 </z-button>
+    <z-button disabled> 禁用按钮 </z-button>
   </div>
 </template>
 
@@ -21,16 +18,13 @@ export default {
   },
   data() {
     return {
-      content: `
-        <z-button>默认按钮</z-button>
-        <z-button :loading="true"> 按钮 </z-button>
-        <z-button icon="setting" icon-position="left" :loading="true">按钮</z-button>
-        <z-button icon="setting" icon-position="right" :loading="true">按钮</z-button>
-        <z-button icon="setting" icon-position="right" disabled> 按钮 </z-button>
-      `
-        .replace(/\t+| +/g, "")
-        .trim(),
+      loading: true,
     };
   },
 };
 </script>
+<style >
+.wrapper {
+  margin-top: 10px;
+}
+</style>
