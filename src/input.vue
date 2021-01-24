@@ -1,26 +1,20 @@
 <template>
-  <div
-    class="wrapper"
-    :class="{error}"
-  >
+  <div class="wrapper" :class="{ error }">
     <input
       type="text"
-      :value=value
+      :value="value"
       :disabled="disabled"
       :readonly="readonly"
-      @change="$emit('change',$event.target.value)"
-      @input="$emit('input',$event.target.value)"
-      @focus="$emit('focus',$event.target.value)"
-      @blur="$emit('blur',$event.target.value)"
-    >
+      @change="$emit('change', $event.target.value)"
+      @input="$emit('input', $event.target.value)"
+      @focus="$emit('focus', $event.target.value)"
+      @blur="$emit('blur', $event.target.value)"
+      :placeholder="placeholder"
+    />
     <template v-if="error">
-      <icon
-        name="error"
-        class="error-icon"
-      ></icon>
-      <span class="errorMessage">{{error}}</span>
+      <icon name="error" class="error-icon"></icon>
+      <span class="errorMessage">{{ error }}</span>
     </template>
-
   </div>
 </template>
 <script>
@@ -31,6 +25,9 @@ export default {
   },
   name: "ZhiNongInput",
   props: {
+    placeholder: {
+      type: String,
+    },
     value: {
       type: String,
     },
