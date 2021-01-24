@@ -129,10 +129,10 @@ export default {
     close() {
       this.visible = false;
       document.removeEventListener("click", this.onClickDocument);
-      console.log("关闭");
+      // console.log("关闭");
     },
     onClick(event) {
-      console.log(event.target);
+      // console.log(event.target);
       if (this.$refs.triggerWrapper.contains(event.target)) {
         if (this.visible === true) {
           this.close();
