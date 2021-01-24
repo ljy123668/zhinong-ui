@@ -120,6 +120,7 @@ $toast-bg: rgba(0, 0, 0.75);
 .wrapper {
   position: fixed;
   left: 50%;
+  z-index: 20;
   transform: translateX(-50%);
   $animation-duration: 250ms;
   &.position-top {

@@ -27,7 +27,7 @@ export default {
       type: String,
       default: "left",
       validator(value) {
-        console.log(value);
+        // console.log(value);
         return value === "left" || value === "right";
       },
     },
