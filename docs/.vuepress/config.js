@@ -1,4 +1,5 @@
 module.exports = {
+    base: '/zhinong-ui/',
     title: '纸农UI',
     description: '一个简单好用的UI框架',
     themeConfig: {
@@ -9,7 +10,16 @@ module.exports = {
             },
             {
                 title: '组件',
-                children: ['/components/button'],
+                children: ['/components/button',
+                    '/components/tabs',
+                    '/components/input',
+                    '/components/grid',
+                    '/components/layout',
+                    '/components/toast',
+                    '/components/collapse',
+                    '/components/popover',
+
+                ],
             }
 
 
