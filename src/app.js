@@ -75,8 +75,6 @@ new Vue({
 
       })
     },
-    inputChange(e) {
-      console.log('hi', e.target.value);
-    }
+
   }
 })
