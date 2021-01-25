@@ -12,41 +12,40 @@ title:Grid
 
 #### 示例代码:
 
-```
+```html
 <z-row class="demoRow">
-    <z-col span="8"><div class="demoCol">8</div></z-col>
-    <z-col span="8"><div class="demoCol">8</div></z-col>
-    <z-col span="8"><div class="demoCol">8</div></z-col>
+  <z-col span="8"><div class="demoCol">8</div></z-col>
+  <z-col span="8"><div class="demoCol">8</div></z-col>
+  <z-col span="8"><div class="demoCol">8</div></z-col>
 </z-row>
 <z-row class="demoRow">
-    <z-col span="6"><div class="demoCol">6</div></z-col>
-    <z-col span="6"><div class="demoCol">6</div></z-col>
-    <z-col span="6"><div class="demoCol">6</div></z-col>
-    <z-col span="6"><div class="demoCol">6</div></z-col>
+  <z-col span="6"><div class="demoCol">6</div></z-col>
+  <z-col span="6"><div class="demoCol">6</div></z-col>
+  <z-col span="6"><div class="demoCol">6</div></z-col>
+  <z-col span="6"><div class="demoCol">6</div></z-col>
 </z-row>
 <z-row class="demoRow">
-    <z-col span="4"><div class="demoCol">4</div></z-col>
-    <z-col span="4"><div class="demoCol">4</div></z-col>
-    <z-col span="4"><div class="demoCol">4</div></z-col>
-    <z-col span="4"><div class="demoCol">4</div></z-col>
-    <z-col span="4"><div class="demoCol">4</div></z-col>
-    <z-col span="4"><div class="demoCol">4</div></z-col>
+  <z-col span="4"><div class="demoCol">4</div></z-col>
+  <z-col span="4"><div class="demoCol">4</div></z-col>
+  <z-col span="4"><div class="demoCol">4</div></z-col>
+  <z-col span="4"><div class="demoCol">4</div></z-col>
+  <z-col span="4"><div class="demoCol">4</div></z-col>
+  <z-col span="4"><div class="demoCol">4</div></z-col>
 </z-row>
 <z-row class="demoRow">
-    <z-col span="2"><div class="demoCol">2</div></z-col>
-    <z-col span="2"><div class="demoCol">2</div></z-col>
-    <z-col span="2"><div class="demoCol">2</div></z-col>
-    <z-col span="2"><div class="demoCol">2</div></z-col>
-    <z-col span="2"><div class="demoCol">2</div></z-col>
-    <z-col span="2"><div class="demoCol">2</div></z-col>
-    <z-col span="2"><div class="demoCol">2</div></z-col>
-    <z-col span="2"><div class="demoCol">2</div></z-col>
-    <z-col span="2"><div class="demoCol">2</div></z-col>
-    <z-col span="2"><div class="demoCol">2</div></z-col>
-    <z-col span="2"><div class="demoCol">2</div></z-col>
-    <z-col span="2"><div class="demoCol">2</div></z-col>
+  <z-col span="2"><div class="demoCol">2</div></z-col>
+  <z-col span="2"><div class="demoCol">2</div></z-col>
+  <z-col span="2"><div class="demoCol">2</div></z-col>
+  <z-col span="2"><div class="demoCol">2</div></z-col>
+  <z-col span="2"><div class="demoCol">2</div></z-col>
+  <z-col span="2"><div class="demoCol">2</div></z-col>
+  <z-col span="2"><div class="demoCol">2</div></z-col>
+  <z-col span="2"><div class="demoCol">2</div></z-col>
+  <z-col span="2"><div class="demoCol">2</div></z-col>
+  <z-col span="2"><div class="demoCol">2</div></z-col>
+  <z-col span="2"><div class="demoCol">2</div></z-col>
+  <z-col span="2"><div class="demoCol">2</div></z-col>
 </z-row>
-
 ```
 
 #### 区块间隔 :
@@ -57,19 +56,18 @@ title:Grid
 
 #### 示例代码:
 
-```
+```html
 <z-row class="demoRow" gutter="10">
-    <z-col span="8"><div class="demoCol">8</div></z-col>
-    <z-col span="8"><div class="demoCol">8</div></z-col>
-    <z-col span="8"><div class="demoCol">8</div></z-col>
+  <z-col span="8"><div class="demoCol">8</div></z-col>
+  <z-col span="8"><div class="demoCol">8</div></z-col>
+  <z-col span="8"><div class="demoCol">8</div></z-col>
 </z-row>
 <z-row class="demoRow" gutter="10">
-    <z-col span="6"><div class="demoCol">6</div></z-col>
-    <z-col span="6"><div class="demoCol">6</div></z-col>
-    <z-col span="6"><div class="demoCol">6</div></z-col>
-    <z-col span="6"><div class="demoCol">6</div></z-col>
+  <z-col span="6"><div class="demoCol">6</div></z-col>
+  <z-col span="6"><div class="demoCol">6</div></z-col>
+  <z-col span="6"><div class="demoCol">6</div></z-col>
+  <z-col span="6"><div class="demoCol">6</div></z-col>
 </z-row>
-
 ```
 
 #### offset 设置间隔 :
@@ -80,21 +78,20 @@ title:Grid
 
 #### 示例代码:
 
-```
+```html
 <z-row class="demoRow" gutter="10">
-    <z-col span="8"><div class="demoCol">8</div></z-col>
-    <z-col span="8" offset="8"><div class="demoCol">8</div></z-col>
+  <z-col span="8"><div class="demoCol">8</div></z-col>
+  <z-col span="8" offset="8"><div class="demoCol">8</div></z-col>
 </z-row>
 <z-row class="demoRow" gutter="10">
-    <z-col span="6"><div class="demoCol">6</div></z-col>
-    <z-col span="6"><div class="demoCol">6</div></z-col>
-    <z-col span="6" offset="6"><div class="demoCol">6</div></z-col>
+  <z-col span="6"><div class="demoCol">6</div></z-col>
+  <z-col span="6"><div class="demoCol">6</div></z-col>
+  <z-col span="6" offset="6"><div class="demoCol">6</div></z-col>
 </z-row>
 <z-row gutter="20" class="demoRow">
-    <z-col span="4"><div class="demoCol">4</div></z-col>
-    <z-col span="18" offset="2"><div class="demoCol">18</div></z-col>
+  <z-col span="4"><div class="demoCol">4</div></z-col>
+  <z-col span="18" offset="2"><div class="demoCol">18</div></z-col>
 </z-row>
-
 ```
 
 # Attributes

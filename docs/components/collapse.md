@@ -12,13 +12,12 @@ title:Collapse
 
 #### 示例代码:
 
-```
+```html
 <z-collapse :selected.sync="selectedTab" single>
-    <z-collapse-item title="标题1" name="1"> 内容1 </z-collapse-item>
-    <z-collapse-item title="标题2" name="2"> 内容2 </z-collapse-item>
-    <z-collapse-item title="标题3" name="3"> 内容3 </z-collapse-item>
+  <z-collapse-item title="标题1" name="1"> 内容1 </z-collapse-item>
+  <z-collapse-item title="标题2" name="2"> 内容2 </z-collapse-item>
+  <z-collapse-item title="标题3" name="3"> 内容3 </z-collapse-item>
 </z-collapse>
-
 ```
 
 #### 多行显示:
@@ -29,13 +28,12 @@ title:Collapse
 
 #### 示例代码:
 
-```
-<z-collapse :selected.sync="selectedTab" >
-    <z-collapse-item title="标题1" name="1"> 内容1 </z-collapse-item>
-    <z-collapse-item title="标题2" name="2"> 内容2 </z-collapse-item>
-    <z-collapse-item title="标题3" name="3"> 内容3 </z-collapse-item>
+```html
+<z-collapse :selected.sync="selectedTab">
+  <z-collapse-item title="标题1" name="1"> 内容1 </z-collapse-item>
+  <z-collapse-item title="标题2" name="2"> 内容2 </z-collapse-item>
+  <z-collapse-item title="标题3" name="3"> 内容3 </z-collapse-item>
 </z-collapse>
-
 ```
 
 # Attributes

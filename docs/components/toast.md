@@ -6,7 +6,7 @@ title:Toast
 
 #### 引用方法:
 
-```
+```js
 import Vue from "vue";
 import Button from "../../../src/button.vue";
 import plugin from "../../../src/plugin";
@@ -21,11 +21,13 @@ Vue.use(plugin);
 
 #### 示例代码:
 
-```
+```html
 <z-button @click="showToast">上方弹出</z-button>
 <z-button @click="showToast('middle')">中间弹出</z-button>
 <z-button @click="showToast('bottom')">下方弹出</z-button>
+```
 
+```js
 showToast(e) {
     this.$toast("你的智商需要充值", {
         enableHtml: true,
@@ -43,9 +45,11 @@ showToast(e) {
 
 #### 示例代码:
 
-```
+```html
 <z-button @click="showToast">上方弹出</z-button>
+```
 
+```js
 showToast() {
     this.$toast("你的智商需要充值", {
     enableHtml: true,
@@ -68,11 +72,12 @@ showToast() {
 
 #### 示例代码:
 
-```
+```html
 <z-button @click="showToast">上方弹出</z-button>
+```
 
-showToast() {
-    this.$toast('<strong style="color:red;">加粗的提示</strong>', {
+```js
+showToast() { this.$toast('<strong style="color:red;">加粗的提示</strong>', {
     enableHtml: true,
     autoClose: 3,
     });

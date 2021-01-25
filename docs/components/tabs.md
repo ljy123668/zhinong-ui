@@ -14,39 +14,40 @@ title:Tabs
 
 #### 示例代码:
 
-```
+```js
 data() {
     return {
-      selectedTab: "3",
-      selectedTab2: "1",
+        selectedTab: "3",
+        selectedTab2: "1",
     };
 },
+```
 
+```html
 <z-tabs :selected.sync="selectedTab">
-    <z-tabs-head>
-        <z-tabs-item name="1"> 标题一 </z-tabs-item>
-        <z-tabs-item name="2"> 标题二 </z-tabs-item>
-        <z-tabs-item name="3"> 标题三</z-tabs-item>
-    </z-tabs-head>
-    <z-tabs-body>
-        <z-tabs-pane name="1"> 内容一 </z-tabs-pane>
-        <z-tabs-pane name="2"> 内容二</z-tabs-pane>
-        <z-tabs-pane name="3"> 内容三 </z-tabs-pane>
-    </z-tabs-body>
+  <z-tabs-head>
+    <z-tabs-item name="1"> 标题一 </z-tabs-item>
+    <z-tabs-item name="2"> 标题二 </z-tabs-item>
+    <z-tabs-item name="3"> 标题三</z-tabs-item>
+  </z-tabs-head>
+  <z-tabs-body>
+    <z-tabs-pane name="1"> 内容一 </z-tabs-pane>
+    <z-tabs-pane name="2"> 内容二</z-tabs-pane>
+    <z-tabs-pane name="3"> 内容三 </z-tabs-pane>
+  </z-tabs-body>
 </z-tabs>
 <z-tabs :selected.sync="selectedTab2">
-    <z-tabs-head>
-        <z-tabs-item name="1"> 标题一 </z-tabs-item>
-        <z-tabs-item name="2" disabled> 标题二 </z-tabs-item>
-        <z-tabs-item name="3"> 标题三</z-tabs-item>
-    </z-tabs-head>
-    <z-tabs-body>
-        <z-tabs-pane name="1"> 内容一 </z-tabs-pane>
-        <z-tabs-pane name="2"> 内容二</z-tabs-pane>
-        <z-tabs-pane name="3"> 内容三 </z-tabs-pane>
-    </z-tabs-body>
+  <z-tabs-head>
+    <z-tabs-item name="1"> 标题一 </z-tabs-item>
+    <z-tabs-item name="2" disabled> 标题二 </z-tabs-item>
+    <z-tabs-item name="3"> 标题三</z-tabs-item>
+  </z-tabs-head>
+  <z-tabs-body>
+    <z-tabs-pane name="1"> 内容一 </z-tabs-pane>
+    <z-tabs-pane name="2"> 内容二</z-tabs-pane>
+    <z-tabs-pane name="3"> 内容三 </z-tabs-pane>
+  </z-tabs-body>
 </z-tabs>
-
 ```
 
 # Attributes

@@ -12,13 +12,18 @@ title:Layout
 
 #### 示例代码:
 
-```
+```html
 <z-layout>
-    <z-header style="height: 50px; background: rgba(0, 160, 233, 0.7)">header</z-header>
-    <z-content style="height: 100px; background: rgba(0, 120, 200, 0.7)">content</z-content>
-    <z-footer style="height: 50px; background: rgba(0, 160, 233, 0.7)">footer</z-footer>
+  <z-header style="height: 50px; background: rgba(0, 160, 233, 0.7)"
+    >header</z-header
+  >
+  <z-content style="height: 100px; background: rgba(0, 120, 200, 0.7)"
+    >content</z-content
+  >
+  <z-footer style="height: 50px; background: rgba(0, 160, 233, 0.7)"
+    >footer</z-footer
+  >
 </z-layout>
-
 ```
 
 #### 页面布局二:
@@ -29,22 +34,22 @@ title:Layout
 
 #### 示例代码:
 
-```
+```html
 <z-layout>
-    <z-header style="height: 50px; background: rgba(0, 160, 233, 0.7)">
-        header
-    </z-header>
-    <z-layout>
+  <z-header style="height: 50px; background: rgba(0, 160, 233, 0.7)">
+    header
+  </z-header>
+  <z-layout>
     <z-sider style="height: 100px; background: #ddd; width: 200px">
-        sider
+      sider
     </z-sider>
     <z-content style="height: 100px; background: rgba(0, 120, 200, 0.7)">
-        content
+      content
     </z-content>
-    </z-layout>
-    <z-footer style="height: 50px; background: rgba(0, 160, 233, 0.7)">
-        footer
-    </z-footer>
+  </z-layout>
+  <z-footer style="height: 50px; background: rgba(0, 160, 233, 0.7)">
+    footer
+  </z-footer>
 </z-layout>
 ```
 
@@ -56,20 +61,19 @@ title:Layout
 
 #### 示例代码:
 
-```
+```html
 <z-layout>
-    <z-sider style="background: #ddd; width: 200px"> sider </z-sider>
-    <z-layout>
-        <z-header style="height: 50px; background: rgba(0, 160, 233, 0.7)">
-            header
-        </z-header>
-        <z-content style="height: 100px; background: rgba(0, 120, 200, 0.7)">
-            content
-        </z-content>
-        <z-footer style="height: 50px; background: rgba(0, 160, 233, 0.7)">
-            footer
-        </z-footer>
-    </z-layout>
+  <z-sider style="background: #ddd; width: 200px"> sider </z-sider>
+  <z-layout>
+    <z-header style="height: 50px; background: rgba(0, 160, 233, 0.7)">
+      header
+    </z-header>
+    <z-content style="height: 100px; background: rgba(0, 120, 200, 0.7)">
+      content
+    </z-content>
+    <z-footer style="height: 50px; background: rgba(0, 160, 233, 0.7)">
+      footer
+    </z-footer>
+  </z-layout>
 </z-layout>
-
 ```

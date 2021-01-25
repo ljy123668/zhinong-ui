@@ -12,7 +12,7 @@ title:Input
 
 #### 示例代码:
 
-```
+```html
 <z-input value="默认内容" disabled></z-input>
 <z-input value="默认内容" readonly></z-input>
 <z-input value="默认内容"></z-input>
@@ -20,7 +20,6 @@ title:Input
 <z-input @change="inputChange" v-model="message"></z-input>
 <p>{{ message }}</p>
 <z-input error="字数不能少于3个字"></z-input>
-
 ```
 
 # Attributes

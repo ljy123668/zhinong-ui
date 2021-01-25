@@ -12,32 +12,31 @@ title:Popover
 
 #### 示例代码:
 
-```
+```html
 <z-popover>
-    <template slot="content">
-        <strong style="color: #f1453d">加粗的提示</strong>
-    </template>
-    <z-button>上面弹出</z-button>
+  <template slot="content">
+    <strong style="color: #f1453d">加粗的提示</strong>
+  </template>
+  <z-button>上面弹出</z-button>
 </z-popover>
 <z-popover position="bottom">
-    <template slot="content" slot-scope="{ close }">
-        <div>popover 内容<z-button @click="close">关闭</z-button></div>
-    </template>
-    <z-button>下面弹出</z-button>
+  <template slot="content" slot-scope="{ close }">
+    <div>popover 内容<z-button @click="close">关闭</z-button></div>
+  </template>
+  <z-button>下面弹出</z-button>
 </z-popover>
 <z-popover position="left">
-    <template slot="content">
-        <div>popover 内容</div>
-    </template>
-    <z-button>左边弹出</z-button>
+  <template slot="content">
+    <div>popover 内容</div>
+  </template>
+  <z-button>左边弹出</z-button>
 </z-popover>
 <z-popover position="right">
-    <template slot="content">
-        <div>popover 内容</div>
-    </template>
-    <z-button>右边弹出</z-button>
+  <template slot="content">
+    <div>popover 内容</div>
+  </template>
+  <z-button>右边弹出</z-button>
 </z-popover>
-
 ```
 
 #### 支持 hover 触发:
@@ -48,32 +47,31 @@ title:Popover
 
 #### 示例代码:
 
-```
+```html
 <z-popover trigger="hover">
-    <template slot="content">
-        <div>popover 内容</div>
-    </template>
-    <z-button>上面弹出</z-button>
+  <template slot="content">
+    <div>popover 内容</div>
+  </template>
+  <z-button>上面弹出</z-button>
 </z-popover>
 <z-popover position="bottom" trigger="hover">
-    <template slot="content">
-        <div>popover 内容</div>
-    </template>
-    <z-button>下面弹出</z-button>
+  <template slot="content">
+    <div>popover 内容</div>
+  </template>
+  <z-button>下面弹出</z-button>
 </z-popover>
 <z-popover position="left" trigger="hover">
-    <template slot="content">
-        <div>popover 内容</div>
-    </template>
-    <z-button>左边弹出</z-button>
+  <template slot="content">
+    <div>popover 内容</div>
+  </template>
+  <z-button>左边弹出</z-button>
 </z-popover>
 <z-popover position="right" trigger="hover">
-    <template slot="content">
-        <div>popover 内容</div>
-    </template>
-    <z-button>右边弹出</z-button>
+  <template slot="content">
+    <div>popover 内容</div>
+  </template>
+  <z-button>右边弹出</z-button>
 </z-popover>
-
 ```
 
 # Attributes

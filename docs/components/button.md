@@ -14,7 +14,7 @@ title:Button
 
 #### 示例代码:
 
-```
+```html
 <z-button>默认按钮</z-button>
 <z-button :loading="loading" @click="loading = !loading">加载按钮</z-button>
 <z-button icon="setting"> 图标按钮 </z-button>
@@ -32,11 +32,11 @@ title:Button
 
 #### 示例代码:
 
-```
+```html
 <z-button-group>
-    <z-button icon="left"> 上一页 </z-button>
-    <z-button> 确定 </z-button>
-    <z-button icon="right" icon-position="right"> 下一页 </z-button>
+  <z-button icon="left"> 上一页 </z-button>
+  <z-button> 确定 </z-button>
+  <z-button icon="right" icon-position="right"> 下一页 </z-button>
 </z-button-group>
 ```
 
